@@ -14,15 +14,6 @@ let players = {};
 let currentPlayer = "w";
 
 app.set("view engine", "ejs");
-// app.use(
-//   express.static(__dirname + "/public", {
-//     setHeaders: function (res, path, stat) {
-//       if (path.endsWith(".js")) {
-//         res.set("content-type", "application/javascript");
-//       }
-//     },
-//   })
-// ); //by this we files from public folder
 
 app.get("/public/js/chessGame.js", (req, res) => {
   res.type("text/javascript"); // Set the correct MIME type
